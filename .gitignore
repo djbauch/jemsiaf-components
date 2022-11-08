@@ -4,9 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
+*.log
+/dist
 
 # testing
 /coverage
+/export/*
 
 # production
 /build
@@ -21,3 +24,20 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/.idea
+/.vscode
+!/.vscode/launch-json
+/.vs
+
+package-lock.json
+
+__ENV.js
+/public/__ENV.js
+
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
