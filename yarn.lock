@@ -4081,7 +4081,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^8.3.0, @testing-library/dom@npm:^8.5.0":
+"@testing-library/dom@npm:^8.11.1, @testing-library/dom@npm:^8.3.0, @testing-library/dom@npm:^8.5.0":
   version: 8.19.0
   resolution: "@testing-library/dom@npm:8.19.0"
   dependencies:
@@ -4097,7 +4097,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^5.14.1":
+"@testing-library/jest-dom@npm:^5.16.5":
   version: 5.16.5
   resolution: "@testing-library/jest-dom@npm:5.16.5"
   dependencies:
@@ -4114,7 +4114,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^13.0.0":
+"@testing-library/react@npm:^13.4.0":
   version: 13.4.0
   resolution: "@testing-library/react@npm:13.4.0"
   dependencies:
@@ -4136,6 +4136,15 @@ __metadata:
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
   checksum: 16319de685fbb7008f1ba667928f458b2d08196918002daca56996de80ef35e6d9de26e9e1ece7d00a004692b95a597cf9142fff0dc53f2f51606a776584f549
+  languageName: node
+  linkType: hard
+
+"@testing-library/user-event@npm:^14.4.3":
+  version: 14.4.3
+  resolution: "@testing-library/user-event@npm:14.4.3"
+  peerDependencies:
+    "@testing-library/dom": ">=7.21.4"
+  checksum: 852c48ea6db1c9471b18276617c84fec4320771e466cd58339a732ca3fd73ad35e5a43ae14f51af51a8d0a150dcf60fcaab049ef367871207bea8f92c4b8195e
   languageName: node
   linkType: hard
 
@@ -4650,7 +4659,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/testing-library__jest-dom@npm:^5.9.1":
+"@types/testing-library__jest-dom@npm:^5.14.5, @types/testing-library__jest-dom@npm:^5.9.1":
   version: 5.14.5
   resolution: "@types/testing-library__jest-dom@npm:5.14.5"
   dependencies:
@@ -8998,6 +9007,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-jest-dom@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "eslint-plugin-jest-dom@npm:4.0.2"
+  dependencies:
+    "@babel/runtime": ^7.16.3
+    "@testing-library/dom": ^8.11.1
+    requireindex: ^1.2.0
+  peerDependencies:
+    eslint: ^6.8.0 || ^7.0.0 || ^8.0.0
+  checksum: ff5fca8a4755560be0b9433c17b182274a7374701293c40f841c3ca86d430449c6fb5dea65c367021bcc0fa8f4ae5ecb1d99a63d6e9490c14c60ef7ec250ba34
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-jest@npm:^25.3.0":
   version: 25.7.0
   resolution: "eslint-plugin-jest@npm:25.7.0"
@@ -11894,21 +11916,24 @@ __metadata:
     "@storybook/preset-create-react-app": ^4.1.2
     "@storybook/react": ^6.5.13
     "@storybook/testing-library": ^0.0.13
-    "@testing-library/jest-dom": ^5.14.1
-    "@testing-library/react": ^13.0.0
-    "@testing-library/user-event": ^13.2.1
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/react": ^13.4.0
+    "@testing-library/user-event": ^14.4.3
     "@types/jest": ^29.2.2
     "@types/node": ^18.11.9
     "@types/react": ^18.0.25
     "@types/react-dom": ^18.0.8
+    "@types/testing-library__jest-dom": ^5.14.5
     babel-plugin-named-exports-order: ^0.0.2
     eslint: ^8.27.0
     eslint-config-react-app: ^7.0.1
+    eslint-plugin-jest-dom: ^4.0.2
     generate-react-cli: ^8.0.1
     prop-types: ^15.8.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-scripts: 5.0.1
+    require-from-string: ^2.0.2
     typescript: ^4.8.4
     web-vitals: ^2.1.0
     webpack: ^5.74.0
@@ -16791,6 +16816,13 @@ __metadata:
   version: 2.0.0
   resolution: "require-main-filename@npm:2.0.0"
   checksum: e9e294695fea08b076457e9ddff854e81bffbe248ed34c1eec348b7abbd22a0d02e8d75506559e2265e96978f3c4720bd77a6dad84755de8162b357eb6c778c7
+  languageName: node
+  linkType: hard
+
+"requireindex@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "requireindex@npm:1.2.0"
+  checksum: 50d8b10a1ff1fdf6aea7a1870bc7bd238b0fb1917d8d7ca17fd03afc38a65dcd7a8a4eddd031f89128b5f0065833d5c92c4fef67f2c04e8624057fe626c9cf94
   languageName: node
   linkType: hard
 
