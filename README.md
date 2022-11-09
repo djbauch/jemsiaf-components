@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This version of CRA no longer supports capital letters in the project name, so what might have been JEMSIAFComponents in the past is
+now jemsiaf-components
 
 ## Available Scripts
 
@@ -29,16 +31,34 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### `yarn storybook`
+Runs the storybook development / styling / testing environment.
+Open [http://localhost:6000](http://localhst:6000) to view it in the browser.
+Storybook will reload any changes to components that you edit.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project Build Notes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+At its inception, this project is built using the following releases of development tools:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Visual Studio Code
+Version: 1.72.2 (system setup)
+Commit: d045a5eda657f4d7b676dedbfa7aab8207f8a075
+Date: 2022-10-12T22:15:18.074Z
+Electron: 19.0.17
+Chromium: 102.0.5005.167
+Node.js: 16.14.2
+V8: 10.2.154.15-electron.0
+OS: Windows_NT x64 10.0.19041
+Sandboxed: No
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### NodeJS 18.12.1 (LTS)
+The NodeJS environment is managed by nvm (Node Version Manager)
 
+### Yarn 3.2.4
+
+### TypeScript 4.8.4-sdk
+
+When Yarn 3 is used, the syntax recognition that relies on the hints found in the imported packages fails when using the TypeScript compiler built into VSCode. Support for the project-specific TypeScript Compiler (tsc) syntax checking is added to the project with the command `yarn dlx @yarnpkg/sdks`
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
