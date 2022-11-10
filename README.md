@@ -85,7 +85,7 @@ When Yarn 3 is used, the syntax recognition that relies on the hints found in th
 
 ### Storybook 6.5.13
 ### generate-react-cli 8.0.1
-This command line tool will is used to create components, along with their style sheets, tests, stories, etc. The command to create a  component called Box would be `yarn dlx genereate-react-cli component Box` Alternately `npx generate-react-cli component Box` Documentation is at [https://www.npmjs.com/package/generate-react-cli](https://www.npmjs.com/package/generate-react-cli)
+This command line tool will is used to create components, along with their style sheets, tests, stories, etc. The command to create a  component called Box would be `yarn dlx generate-react-cli component Box` Alternately `npx generate-react-cli component Box` Documentation is at [https://www.npmjs.com/package/generate-react-cli](https://www.npmjs.com/package/generate-react-cli)
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
