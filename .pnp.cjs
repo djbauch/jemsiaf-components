@@ -61,6 +61,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-react-app", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:7.0.1"],\
             ["eslint-plugin-jest-dom", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:4.0.2"],\
             ["generate-react-cli", "npm:8.0.1"],\
+            ["jquery", "npm:3.6.1"],\
             ["lodash", "npm:4.17.21"],\
             ["mdb-react-ui-kit", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:5.0.0"],\
             ["prop-types", "npm:15.8.1"],\
@@ -18376,6 +18377,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-react-app", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:7.0.1"],\
             ["eslint-plugin-jest-dom", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:4.0.2"],\
             ["generate-react-cli", "npm:8.0.1"],\
+            ["jquery", "npm:3.6.1"],\
             ["lodash", "npm:4.17.21"],\
             ["mdb-react-ui-kit", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:5.0.0"],\
             ["prop-types", "npm:15.8.1"],\
@@ -19148,6 +19150,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.11.9"],\
             ["merge-stream", "npm:2.0.0"],\
             ["supports-color", "npm:8.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["jquery", [\
+        ["npm:3.6.1", {\
+          "packageLocation": "./.yarn/cache/jquery-npm-3.6.1-6f29087f48-6177d866a7.zip/node_modules/jquery/",\
+          "packageDependencies": [\
+            ["jquery", "npm:3.6.1"]\
           ],\
           "linkType": "HARD"\
         }]\

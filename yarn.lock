@@ -12460,6 +12460,7 @@ __metadata:
     eslint-config-react-app: ^7.0.1
     eslint-plugin-jest-dom: ^4.0.2
     generate-react-cli: ^8.0.1
+    jquery: ^3.6.1
     lodash: ^4.17.21
     mdb-react-ui-kit: ^5.0.0
     prop-types: ^15.8.1
@@ -13178,6 +13179,13 @@ __metadata:
   bin:
     jest: bin/jest.js
   checksum: 96f1d69042b3c6dfc695f2a4e4b0db38af6fb78582ad1a02beaa57cfcd77cbd31567d7d865c1c85709b7c3e176eefa3b2035ffecd646005f15d8ef528eccf205
+  languageName: node
+  linkType: hard
+
+"jquery@npm:^3.6.1":
+  version: 3.6.1
+  resolution: "jquery@npm:3.6.1"
+  checksum: 6177d866a74f1137cad800f142c7cdbd5ab19cd4282546f8bdb4890c9f933b1d542ab96f2aa15d007e43c98de7315b0513e849ec5359d3ac5640f720892fe547
   languageName: node
   linkType: hard
 

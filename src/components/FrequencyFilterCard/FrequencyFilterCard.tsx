@@ -25,7 +25,7 @@ export const freqEventFilterSwitch = 'freqEventFilterSwitch'
 
 const freqUnits = getFrequencyUnits()
 const bandsAvailable = getBandsAvailable()
-var freqArrVal = 0
+let freqArrVal = 0
 
 export const initializeFreqStore = () => {}
 
@@ -102,7 +102,7 @@ export type FreqDropdownPropsType = {
   id: string
   value: string
   onFilterChange: (event: React.ChangeEvent<HTMLInputElement>) => void
-  filterOn: boolean
+  filterOn: (e: { filterId: string; eventType: string; value: any }) => void
 }
 
 /*
@@ -253,10 +253,10 @@ export const retNodes = (units: string, showVals: boolean, activeFilter) => {
   return currentNodes(units, showVals, activeFilter)
 }
 
-interface FrequencyFilterCardProps {
-  onFilterChange: any
-  onDashboardChange: any
-  freqState: FreqStateType
+type FrequencyFilterCardProps = {
+  onFilterChange?: (e: { filterId: string; eventType: string; value: any }) => void
+  onDashboardChange?: any
+  freqState?: FreqStateType
   closeTab?: any
   isTab?: any
 }
@@ -305,7 +305,7 @@ const FrequencyFilterCard: FC<FrequencyFilterCardProps> = (props: FrequencyFilte
     <FreqDropdown
       id="units"
       value={props.freqState.units}
-      onFilterChange={props.onFilterChange}
+      onFilterChange= {() => {}} //{props.onFilterChange}
       filterOn={props.freqState.filterOn}
     />
   )
@@ -315,7 +315,7 @@ const FrequencyFilterCard: FC<FrequencyFilterCardProps> = (props: FrequencyFilte
       id="bands"
       value={props.freqState.activeFilter.label}
       onFilterChange={props.onFilterChange}
-      filterOn={props.freqState.filterOn}
+      filterOn= {false} //{props.freqState.filterOn}
     />
   )
 
@@ -355,7 +355,7 @@ const FrequencyFilterCard: FC<FrequencyFilterCardProps> = (props: FrequencyFilte
           setValidUserFilter={setValidUserFilter}
           freqState={props.freqState}
           validRange={validRange}
-          filterOn={props.freqState.filterOn}
+          filterOn= {false} //{props.freqState.filterOn}
         />
 
         <FreqText
@@ -368,7 +368,7 @@ const FrequencyFilterCard: FC<FrequencyFilterCardProps> = (props: FrequencyFilte
           setValidUserFilter={setValidUserFilter}
           freqState={props.freqState}
           validRange={validRange}
-          filterOn={props.freqState.filterOn}
+          filterOn= {false} //{props.freqState.filterOn}
         />
       </Form>
     )
@@ -438,7 +438,7 @@ const FrequencyFilterCard: FC<FrequencyFilterCardProps> = (props: FrequencyFilte
     props.onFilterChange({
       filterId: filterId,
       eventType: freqEventFilterSwitch,
-      filterOn: filterOn,
+      value: filterOn,
     })
   }
   const switchOnOff = (
@@ -449,11 +449,11 @@ const FrequencyFilterCard: FC<FrequencyFilterCardProps> = (props: FrequencyFilte
       <MDBSwitch
         id="filterOnFreq"
         className="light"
-        checked={props.freqState.filterOn}
+        checked = {false} //{props.freqState.filterOn}
         onChange={() => {
           let enabled = !props.freqState.filterOn
           handleFilterSwitch(enabled)
-          props.onFilterChange({ filterId: filterId, eventType: freqEventFilterSwitch, filterOn: enabled })
+          props.onFilterChange({ filterId: filterId, eventType: freqEventFilterSwitch, value: enabled })
         }}
       />
     </Container>

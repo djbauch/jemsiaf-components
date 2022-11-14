@@ -88,19 +88,19 @@ export type FreqStateType = {
   checked: Array<any>
   expanded: Array<string>
   activeFilter: any
-  filterOn: boolean
+  filterOn: (e: { filterId: string; eventType: string; value: any }) => void
 }
 
 export type TempStateType = {
   startDate: string
   endDate: string
   timeZone: string
-  filterOn: boolean
+  filterOn: (e: { filterId: string; eventType: string; value: any }) => void
 }
 
 export type FuncStateType = {
   functionalValues: Array<FuncItemType>
-  filterOn: boolean
+  filterOn: (e: { filterId: string; eventType: string; value: any }) => void
 }
 
 export type FuncItemType = {

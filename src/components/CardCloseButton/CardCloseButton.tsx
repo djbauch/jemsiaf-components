@@ -4,14 +4,14 @@ import { CloseButton } from 'react-bootstrap'
 import classNames from 'classnames'
 
 interface CardCloseButtonProps {
-  size: 'sm' | 'lg'
+  size?: 'sm' | 'lg'
   noOutline?: boolean
-  onClick: React.MouseEventHandler<HTMLButtonElement>
-  className: string
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
+  className?: string
 }
 
 const CardCloseButton: FC<CardCloseButtonProps> =
- ({size, onClick, noOutline, className, ...rest}: CardCloseButtonProps) => (
+ ({size = 'sm', onClick = ()=>{}, noOutline, className='button', ...rest}: CardCloseButtonProps) => (
   <CloseButton
       className={classNames(className, {
         [`btn-${size}`]: size,
