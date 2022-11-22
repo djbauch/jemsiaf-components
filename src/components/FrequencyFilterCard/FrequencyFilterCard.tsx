@@ -47,7 +47,7 @@ export type FreqTextProps = {
 }
 
 export const FreqText = (props: FreqTextProps) => {
-  const onChange = (e) => {
+  const onChange = (e: string) => {
     //if the value is in Hz, it should be an integer. Other units can be entered as decimals.
     const newValue = () => {
       return props.freqState.units === 'Hz' ? parseInt(e) : parseFloat(e)

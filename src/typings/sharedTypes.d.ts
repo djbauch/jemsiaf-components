@@ -87,7 +87,7 @@ export type FreqStateType = {
   units: string
   checked: Array<any>
   expanded: Array<string>
-  activeFilter: any
+  activeFilter: {label: string}
   filterOn: (e: { filterId: string; eventType: string; value: any }) => void
 }
 
