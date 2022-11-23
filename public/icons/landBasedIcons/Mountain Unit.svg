@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6.37 -6.37 12.74 12.74" color="#212121" width="75" height="75"><g transform="matrix(1 0 0 -1 0 0)">
+    <g xmlns="http://www.w3.org/2000/svg">
+      <circle class="primary" fill="currentColor" cx="0" cy="0" r="6.245"/>
+      <path class="secondary" d="M0,6.12c3.38,0,6.12-2.74,6.12-6.12S3.38-6.12,0-6.12S-6.12-3.38-6.12,0S-3.38,6.12,0,6.12 M0,6.37    c-3.513,0-6.37-2.857-6.37-6.37S-3.513-6.37,0-6.37S6.37-3.513,6.37,0S3.513,6.37,0,6.37L0,6.37z" fill="#FFFFFF"/>
+    </g>
+    <g xmlns="http://www.w3.org/2000/svg" id="Mountain_1_">
+      <polygon class="secondary" points="-4.901,-3.056 -2.53,1.467 -1.415,1.009 -0.658,1.646 -0.04,1.309 0.877,1.807 1.753,0.571     0.14,-2.735   " fill="#FFFFFF"/>
+      <polygon class="secondary" points="-2.37,1.807 -0.937,4.416 0.697,1.986 0.02,1.667 -0.677,1.986 -1.395,1.328   " fill="#FFFFFF"/>
+      <polygon class="secondary" points="0.478,-2.677 2.63,1.587 4.901,-2.398   " fill="#FFFFFF"/>
+    </g>
+  </g></svg>

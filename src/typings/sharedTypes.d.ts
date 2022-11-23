@@ -9,6 +9,20 @@ export type DashboardStateType = {
   location: string //top, center, right
 }
 
+export type Project = {
+  id: string
+  name: string
+  description: string
+  data: {}
+  owner: string
+  shared: boolean
+  sharedUsers: string[]
+  sharedGroups: string[]
+  editable: string[]
+  created: string
+  modified: string
+}
+
 export type GeoFeature = {
   type: string
   features: Array<{
@@ -131,18 +145,18 @@ export type GlobeLayoutProps = {
   getTimeZoneOptions: () => TimezoneOption[]
   getUsers: () => UserAndGroups[]
   getGroups: () => { group: string }[]
-  saveAsProject: (projectInfo: typeof Project, sourceProjectId: string) => boolean
+  saveAsProject: (projectInfo: Project, sourceProjectId: string) => boolean
   deleteProject: (projectId: string) => boolean
-  editProjectDetails: (projectInfo: typeof Project) => boolean
+  editProjectDetails: (projectInfo: Project) => boolean
   saveProject: (project: any) => Promise<boolean>
-  shareProject: (project: typeof Project) => boolean
+  shareProject: (project: Project) => boolean
   unshareProject: (projectId: string) => boolean
   exportProject: any
   loadProject: (projectId: string) => void
   newProject: any
   getProjectById: any
   getProjectDetailsById: any
-  getProjectList: () => typeof Project[]
+  getProjectList: () => Project[]
   isProjectNameUnique: any
   getExportProjectDataTypes: any
   getDocumentList: any
@@ -315,12 +329,12 @@ export type ProjectsCardProps = {
   key: string
   getUsers: () => UserAndGroups[]
   getGroups: () => { group: string }[]
-  saveAsProject: (projectData: typeof Project, id: string) => void
+  saveAsProject: (projectData: Project, id: string) => void
   deleteProject: (id: string) => void
-  editProjectDetails: (projectData: typeof Project) => void
+  editProjectDetails: (projectData: Project) => void
   saveCurrentProject
-  saveProject: (project: typeof Project) => Promise<boolean>
-  shareProject: (project: typeof Project) => void
+  saveProject: (project: Project) => Promise<boolean>
+  shareProject: (project: Project) => void
   unshareProject
   exportProject
   loadProject: (id: string) => void
@@ -330,7 +344,7 @@ export type ProjectsCardProps = {
   isProjectNameUnique
   getExportProjectDataTypes
   onDashboardChange
-  getProjectList: () => typeof Project[]
+  getProjectList: () =>  Project[]
   handleProjectAction?
 }
 

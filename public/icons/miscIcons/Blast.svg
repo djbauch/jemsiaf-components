@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6.37 -6.37 12.74 12.74" color="#212121" width="75" height="75"><g transform="matrix(1 0 0 -1 0 0)">
+    <g xmlns="http://www.w3.org/2000/svg">
+      <circle class="primary" fill="currentColor" cx="0" cy="0" r="6.245"/>
+      <path class="secondary" d="M0,6.12c3.38,0,6.12-2.74,6.12-6.12S3.38-6.12,0-6.12S-6.12-3.38-6.12,0S-3.38,6.12,0,6.12 M0,6.37    c-3.513,0-6.37-2.857-6.37-6.37S-3.513-6.37,0-6.37S6.37-3.513,6.37,0S3.513,6.37,0,6.37L0,6.37z" fill="#FFFFFF"/>
+    </g>
+    <polygon xmlns="http://www.w3.org/2000/svg" id="Blast_2_" class="secondary" points="-3.75,-3.135 3.816,-3.135 5.67,-1.311 3.559,-1.764 5.305,2.053 2.136,-0.54    2.136,0.501 0.96,-1.633 0.583,1.729 -0.257,-0.54 -2.844,4.169 -2.196,-0.662 -3.491,0.308 -3.427,-2.087 -5.67,-0.794  " fill="#FFFFFF"/>
+  </g></svg>
