@@ -1,12 +1,14 @@
-import React, { FC } from 'react';
-import styles from './JEMSIAFCardHeader.module.css';
+import React, { FC } from 'react'
+import Card from 'react-bootstrap/Card'
+import CardCloseButton from '../CardCloseButton/CardCloseButton'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 interface JEMSIAFCardHeaderProps {}
 
 const JEMSIAFCardHeader: FC<JEMSIAFCardHeaderProps> = () => (
-  <div className={styles.JEMSIAFCardHeader} data-testid="JEMSIAFCardHeader">
-    JEMSIAFCardHeader Component
-  </div>
+  <Card.Header data-testid="JEMSIAFCardHeader">
+    <CardCloseButton/> JEMSIAFCardHeader Component
+  </Card.Header>
 );
 
 export default JEMSIAFCardHeader;

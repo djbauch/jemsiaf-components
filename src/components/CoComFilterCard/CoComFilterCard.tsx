@@ -1,9 +1,10 @@
-import React, { FC } from "react";
+import React, { FC } from 'react'
+import Tooltip from 'react-bootstrap/Tooltip'
+import Card from 'react-bootstrap/Card'
 import {
   Container,
   UncontrolledTooltip,
   Button,
-  Card,
   CardBody,
   Col,
   Form,
@@ -29,9 +30,9 @@ export type CoComFilterCardProps = {
 const CoComFilterCard: FC<CoComFilterCardProps> = () => {
   const ccs = useAppSelector((state) => state.combatantCommands.value);
   return (
-    <div className={styles.CoComFilterCard} data-testid="CoComFilterCard">
+    <Card data-testid="CoComFilterCard">
       <CheckboxTree nodes={ccs} />
-    </div>
+    </Card>
   );
 };
 
