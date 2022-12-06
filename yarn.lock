@@ -2109,6 +2109,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/roboto@npm:^4.5.8":
+  version: 4.5.8
+  resolution: "@fontsource/roboto@npm:4.5.8"
+  checksum: 460b6de2c9f7a172192c3f5bdd3aa11f78f0b6660dca9dc2b9d8207272b50c55b5a8f2da68e11e7fbaf44c7d3cf4191030eecce9def79fab75d4cc1de39754e2
+  languageName: node
+  linkType: hard
+
 "@fortawesome/fontawesome-common-types@npm:6.2.0":
   version: 6.2.0
   resolution: "@fortawesome/fontawesome-common-types@npm:6.2.0"
@@ -2672,6 +2679,22 @@ __metadata:
   version: 5.10.17
   resolution: "@mui/core-downloads-tracker@npm:5.10.17"
   checksum: 47b67b1ed50f739352d5cc6eeab556a927cc898e3fb18c8a9686dc8f9299b42875d5c4302000f2ef259c34c751ba16d670fc6118cd7eed131b558f5d3cc0d758
+  languageName: node
+  linkType: hard
+
+"@mui/icons-material@npm:^5.10.16":
+  version: 5.10.16
+  resolution: "@mui/icons-material@npm:5.10.16"
+  dependencies:
+    "@babel/runtime": ^7.20.1
+  peerDependencies:
+    "@mui/material": ^5.0.0
+    "@types/react": ^17.0.0 || ^18.0.0
+    react: ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 00cf9cdbb76a5806307d9cccb647cbd8e45d18a1be7e252727c789cd5a29103abf7fdbe724553425bcdff8daf58ec612e5a8c08c3c7a5a6e28efb14b86507687
   languageName: node
   linkType: hard
 
@@ -12872,10 +12895,12 @@ __metadata:
     "@babel/plugin-syntax-jsx": ^7.18.6
     "@emotion/react": ^11.10.5
     "@emotion/styled": ^11.10.5
+    "@fontsource/roboto": ^4.5.8
     "@fortawesome/fontawesome-svg-core": ^6.2.1
     "@fortawesome/free-solid-svg-icons": ^6.2.0
     "@fortawesome/react-fontawesome": ^0.2.0
     "@mdx-js/react": ^1.6.22
+    "@mui/icons-material": ^5.10.16
     "@mui/material": ^5.10.17
     "@reduxjs/toolkit": ^1.9.0
     "@storybook/addon-actions": ^6.5.13
