@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
-import styles from './CardCloseButton.module.css'
-import { CloseButton } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import CloseButton from 'react-bootstrap/CloseButton'
 import classNames from 'classnames'
 
 interface CardCloseButtonProps {
@@ -18,6 +18,7 @@ const CardCloseButton: FC<CardCloseButtonProps> =
         'outline-none': noOutline || false,
       })}
       onClick={onClick}
+      aria-label="Close"
       data-testid="CardCloseButton"
       {...rest}
     />

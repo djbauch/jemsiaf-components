@@ -1,7 +1,11 @@
 {
   "name": "jemsiaf-components",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "description": "React, Storybook, Redux, GraphQL, React-Router Search and Filters",
   "private": true,
+  "keywords": [],
+  "author": "DJ Bauch",
+  "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
@@ -29,6 +33,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.4",
     "react-scripts": "5.0.1",
     "reactstrap": "^9.1.5",
     "require-from-string": "^2.0.2",
@@ -89,6 +94,7 @@
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "^0.0.13",
+    "@types/flat": "^5.0.2",
     "@types/lodash": "^4.14.188",
     "babel-plugin-named-exports-order": "^0.0.2",
     "eslint": "^8.27.0",

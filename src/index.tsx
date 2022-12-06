@@ -5,15 +5,33 @@ import store from './app/store'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import App from './App'
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals'
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route,
+  LoaderFunction,
+  ActionFunction,
+} from 'react-router-dom'
 
+const router = createBrowserRouter(
+  createRoutesFromElements([
+    <Route
+    path="/"
+    element={<App />}
+    >
+
+    </Route>
+  ])
+)
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+  document.getElementById('root')
+)
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <App />
+    <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>
 );
