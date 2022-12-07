@@ -464,7 +464,7 @@ const FrequencyFilterCard: FC<FrequencyFilterCardProps> = (props: FrequencyFilte
       <table>
         <tr>
           <th>
-            <CardCloseButton size="sm" onClick={props.closeTab} className={'m-2'} />
+            <CardCloseButton size="small" onClick={props.closeTab} className={'m-2'} />
           </th>
           <th>
             <h4 className="mb-0 f-tabs-title">Frequency</h4>

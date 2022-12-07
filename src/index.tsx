@@ -2,10 +2,10 @@ import * as React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
 import store from './app/store'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
+// Routing is with react-router v6
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -14,6 +14,15 @@ import {
   LoaderFunction,
   ActionFunction,
 } from 'react-router-dom'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+// Roboto font installed in the project for Material UI
+// Material UI's default typography only uses the 300,400,500, and 700 font weights
+import '@fontsource/roboto/300.css'
+import '@fontsource/roboto/400.css'
+import '@fontsource/roboto/500.css'
+import '@fontsource/roboto/700.css'
 
 const router = createBrowserRouter(
   createRoutesFromElements([

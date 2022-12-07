@@ -1,12 +1,23 @@
 /* eslint-disable */
-import JEMSIAFCardHeader from './JEMSIAFCardHeader';
+import JEMSIAFCardHeader from './JEMSIAFCardHeader'
 
 export default {
   title: "JEMSIAFCardHeader",
-};
+  component: JEMSIAFCardHeader
+}
 
-export const Default = () => <JEMSIAFCardHeader />;
+const Template = args => <JEMSIAFCardHeader {...args} />
+
+export const Default = Template.bind({})
 
 Default.story = {
   name: 'default',
-};
+}
+
+export const Titled = Template.bind({})
+Titled.story = {
+  name: 'Titled'
+}
+Titled.args = {
+  title: 'COCOMs'
+}
