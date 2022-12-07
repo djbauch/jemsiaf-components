@@ -345,7 +345,7 @@ const getFreqBandFields = (units: string, showValues: boolean, activeFilter: any
   }
 }
 
-export const FreqNodes = (units: string, showValues: boolean, activeFilter: any) => {
+export const FreqNodes = (units: string, showValues: boolean, activeFilter: string) => {
   return getFreqBandFields(units, showValues, activeFilter)
 }
 /*

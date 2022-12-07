@@ -95,13 +95,26 @@ export type PlatformType = {
   fontColor?: string
 }
 
+export type FreqFilterType = {
+  id: string
+  label: string
+  children: [
+    {
+      id: string
+      band: { low: number; high: number }
+      label: string
+      units: string
+    }
+  ]
+}
+
 export type FreqStateType = {
   lowFreq: number
   highFreq: number
   units: string
   checked: Array<any>
   expanded: Array<string>
-  activeFilter: {label: string}
+  activeFilter: FreqFilterType
   filterOn: (e: { filterId: string; eventType: string; value: any }) => void
 }
 
