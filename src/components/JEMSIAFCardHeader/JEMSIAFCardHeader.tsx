@@ -6,9 +6,10 @@ import Switch from "@mui/material/Switch";
 
 interface JEMSIAFCardHeaderProps {
   title?: string
+  onChange?:  React.ChangeEventHandler<HTMLInputElement>
 }
 
-const JEMSIAFCardHeader: FC<JEMSIAFCardHeaderProps> = ({title}) => {
+const JEMSIAFCardHeader: FC<JEMSIAFCardHeaderProps> = ({title, onChange}) => {
   const [isFilterActive, setFilterActive] = React.useState(true);
   title = title || 'Untitled Card'
   return (
@@ -17,7 +18,11 @@ const JEMSIAFCardHeader: FC<JEMSIAFCardHeaderProps> = ({title}) => {
       <Tooltip title={isFilterActive ? 'Disable Filter': 'Enable Filter'}>
         <Switch
           checked={isFilterActive}
-          onChange={() => setFilterActive(!isFilterActive)}
+          onChange={(event) => {
+             setFilterActive(event.target.checked)
+             onChange && onChange(event)
+            }
+          }
           color="primary"
           aria-label="Enable/Disable Filter"
         />

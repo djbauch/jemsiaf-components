@@ -87,6 +87,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-scripts", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:5.0.1"],\
             ["reactstrap", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:9.1.5"],\
             ["require-from-string", "npm:2.0.2"],\
+            ["toastify-react", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:4.3.1"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"],\
             ["web-vitals", "npm:2.1.4"],\
             ["webpack", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:5.74.0"],\
@@ -19067,6 +19068,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-scripts", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:5.0.1"],\
             ["reactstrap", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:9.1.5"],\
             ["require-from-string", "npm:2.0.2"],\
+            ["toastify-react", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:4.3.1"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"],\
             ["web-vitals", "npm:2.1.4"],\
             ["webpack", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:5.74.0"],\
@@ -22449,6 +22451,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/postcss-npm-8.4.18-f1d73c0a84-9349fd9984.zip/node_modules/postcss/",\
           "packageDependencies": [\
             ["postcss", "npm:8.4.18"],\
+            ["nanoid", "npm:3.3.4"],\
+            ["picocolors", "npm:1.0.0"],\
+            ["source-map-js", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:8.4.19", {\
+          "packageLocation": "./.yarn/cache/postcss-npm-8.4.19-164042496a-62782723a3.zip/node_modules/postcss/",\
+          "packageDependencies": [\
+            ["postcss", "npm:8.4.19"],\
             ["nanoid", "npm:3.3.4"],\
             ["picocolors", "npm:1.0.0"],\
             ["source-map-js", "npm:1.0.2"]\
@@ -28323,6 +28335,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["to-regex-range", "npm:5.0.1"],\
             ["is-number", "npm:7.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["toastify-react", [\
+        ["npm:4.3.1", {\
+          "packageLocation": "./.yarn/cache/toastify-react-npm-4.3.1-d99810f61f-afddb8e311.zip/node_modules/toastify-react/",\
+          "packageDependencies": [\
+            ["toastify-react", "npm:4.3.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:4.3.1", {\
+          "packageLocation": "./.yarn/__virtual__/toastify-react-virtual-e533cc6e1a/0/cache/toastify-react-npm-4.3.1-d99810f61f-afddb8e311.zip/node_modules/toastify-react/",\
+          "packageDependencies": [\
+            ["toastify-react", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:4.3.1"],\
+            ["@types/react", "npm:18.0.25"],\
+            ["@types/react-dom", "npm:18.0.8"],\
+            ["postcss", "npm:8.4.19"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:4132f5b1ace8dd58d33e39361f269665f933cd8d148177901e38f97e249ef375b4220ee631d8ab00dfde604f8f99999143a60a248b57e06052071ba65ecabda4#npm:18.2.0"],\
+            ["tslib", "npm:2.4.1"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
