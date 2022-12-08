@@ -1,7 +1,8 @@
 /* eslint-disable */
 import React from 'react'
 import JEMSIAFCardHeader from './JEMSIAFCardHeader'
-import toaster from 'toastify-react'
+import {toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 export default {
   title: "JEMSIAFCardHeader",
@@ -25,7 +26,7 @@ Titled.args = {
 }
 
 const toggled = (event: React.ChangeEvent<HTMLInputElement>) => {
-  toaster.success(`Toggle state is ${event.target.checked? "ON" : "OFF"}`)
+  toast(`Toggle state is ${event.target.checked? "ON" : "OFF"}`)
 }
 
 export const Responsive = Template.bind({})

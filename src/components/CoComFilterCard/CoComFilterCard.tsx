@@ -28,7 +28,7 @@ export type CoComFilterCardProps = {
 };
 
 const CoComFilterCard: FC<CoComFilterCardProps> = () => {
-  const ccs = useAppSelector((state) => state.combatantCommands.value);
+  const ccs = useAppSelector((state) => state.combatantCommands.value)
   return (
     <Card data-testid="CoComFilterCard">
       <CheckboxTree nodes={ccs} />

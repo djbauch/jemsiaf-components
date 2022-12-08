@@ -19,6 +19,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Roboto font installed in the project for Material UI
 // Material UI's default typography only uses the 300,400,500, and 700 font weights
+import '@fontsource/roboto'
 import '@fontsource/roboto/300.css'
 import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'

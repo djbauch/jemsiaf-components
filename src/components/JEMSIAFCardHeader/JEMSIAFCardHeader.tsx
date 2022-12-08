@@ -1,8 +1,9 @@
-import React, { FC } from "react";
-import CardHeader from "@mui/material/Card";
-import CardCloseButton from "../CardCloseButton/CardCloseButton";
-import Tooltip from "@mui/material/Tooltip";
-import Switch from "@mui/material/Switch";
+import React, { FC } from "react"
+import CardHeader from "@mui/material/Card"
+import CardCloseButton from "../CardCloseButton/CardCloseButton"
+import Tooltip from "@mui/material/Tooltip"
+import Switch from "@mui/material/Switch"
+import {ToastContainer} from 'react-toastify'
 
 interface JEMSIAFCardHeaderProps {
   title?: string
@@ -28,6 +29,7 @@ const JEMSIAFCardHeader: FC<JEMSIAFCardHeaderProps> = ({title, onChange}) => {
           aria-label="Enable/Disable Filter"
         />
       </Tooltip>
+      <ToastContainer/>
     </CardHeader>
   );
 };
