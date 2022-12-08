@@ -5,6 +5,11 @@ import store from './app/store'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
+import SearchRoot, {
+  loader as rootLoader,
+  action as rootAction,
+} from './routes/SearchRoot'
+
 // Routing is with react-router v6
 import {
   createBrowserRouter,
@@ -28,8 +33,9 @@ import '@fontsource/roboto/700.css'
 const router = createBrowserRouter(
   createRoutesFromElements([
     <Route
-    path="/"
-    element={<App />}
+      path="/"
+      element={<SearchRoot />}
+      loader={rootLoader}
     >
 
     </Route>
@@ -41,7 +47,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>
 );
