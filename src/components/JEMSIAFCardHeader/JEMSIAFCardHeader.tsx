@@ -3,6 +3,7 @@ import CardHeader from "@mui/material/Card"
 import CardCloseButton from "../CardCloseButton/CardCloseButton"
 import Tooltip from "@mui/material/Tooltip"
 import Switch from "@mui/material/Switch"
+import {Form as RBSForm} from 'react-bootstrap'
 import {ToastContainer} from 'react-toastify'
 
 interface JEMSIAFCardHeaderProps {
@@ -10,7 +11,7 @@ interface JEMSIAFCardHeaderProps {
   onChange?:  React.ChangeEventHandler<HTMLInputElement>
 }
 
-const JEMSIAFCardHeader: FC<JEMSIAFCardHeaderProps> = ({title, onChange}) => {
+const JEMSIAFCardHeader: FC<JEMSIAFCardHeaderProps> = ({title, onChange}: JEMSIAFCardHeaderProps) => {
   const [isFilterActive, setFilterActive] = React.useState(true);
   title = title || 'Untitled Card'
   return (
