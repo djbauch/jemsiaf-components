@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
 import store from './app/store'
 import './index.css'
-import App from './App'
 import reportWebVitals from './reportWebVitals'
 import SearchRoot, {
   loader as rootLoader,
   action as rootAction,
 } from './routes/SearchRoot'
+import App from './routes/App'
+import ErrorPage from './routes/ErrorPage'
 
 // Routing is with react-router v6
 import {
@@ -35,9 +36,11 @@ const router = createBrowserRouter(
     <Route
       path="/"
       element={<SearchRoot />}
+      errorElement={<ErrorPage />}
       loader={rootLoader}
     >
-
+      <Route errorElement={<ErrorPage />} />
+      <Route index={true} element={<App />} />
     </Route>
   ])
 )

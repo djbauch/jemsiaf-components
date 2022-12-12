@@ -8,7 +8,7 @@ export async function loader({ request }: { request: { url: string } }) {
   const url = new URL(request.url)
   const q = url.searchParams.get('q')
   // TODO: search and return results
-  return { result: [{id: '1', summary: 'These are the droids you are looking for' }], q: '' }
+  return { result: [{ id: '1', summary: 'These are the droids you are looking for' }], q: '' }
 }
 
 type SearchResult = {
@@ -64,7 +64,7 @@ const Root = () => {
             <ul>
               {searchResults.map((result, i) => (
                 <li key={result.id}>
-                  <NavLink to={`Results/${result.id}`}>
+                  <NavLink to={`results/${result.id}`}>
                     {result.summary}
                   </NavLink>
                 </li>
@@ -77,6 +77,10 @@ const Root = () => {
             )
           }
         </nav>
+      </div>
+      <div id="detail"
+        className={navigation.state === 'loading' ? 'loading' : ''}>
+        <Outlet />
       </div>
     </>
   )
